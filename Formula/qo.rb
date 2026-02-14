@@ -5,20 +5,20 @@
 class Qo < Formula
   desc "Query JSON data with SQL"
   homepage "https://github.com/kiki-ki/go-qo"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.0/qo_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e6f7f9b30777deed79f252008299fa7d9ad88a20c5606c354ec25befdded345b"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_darwin_amd64.tar.gz"
+      sha256 "cb8d5f1269e445f848aec1fcf719103de08a106e1ce7129b56c3e1d3fae41e02"
 
       def install
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.0/qo_0.3.0_darwin_arm64.tar.gz"
-      sha256 "84d6e5be171c879244446e8f2ee32edb246a0ca2fc8c426f6a3ea94535c673ec"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_darwin_arm64.tar.gz"
+      sha256 "83eb64a521de9f447be3b89b2fdd448192c0e8f2909386e3bde6076d8a7f7d49"
 
       def install
         bin.install "qo"
@@ -28,15 +28,15 @@ class Qo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.0/qo_0.3.0_linux_amd64.tar.gz"
-      sha256 "a532c822558a37a6cbb8f00337f3e8750879d592871c976bd3da8812e8ec2352"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_linux_amd64.tar.gz"
+      sha256 "62a4d415fc15650546f32e68ce94c0ed9471bdc383a848dcc0cb955bf0624a9b"
       def install
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.0/qo_0.3.0_linux_arm64.tar.gz"
-      sha256 "00e3ca1a06b235054fba9ce331f21e1cc655a2a6a9f2e0df44ee1b4a59b772b4"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_linux_arm64.tar.gz"
+      sha256 "61b7b4bc302a89a5a6fc68167926cb5be5345d5a22ecf55ff22a936e248a5543"
       def install
         bin.install "qo"
       end
