@@ -5,22 +5,22 @@
 class Qo < Formula
   desc "Query JSON data with SQL"
   homepage "https://github.com/kiki-ki/go-qo"
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_darwin_amd64.tar.gz"
-      sha256 "cb8d5f1269e445f848aec1fcf719103de08a106e1ce7129b56c3e1d3fae41e02"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.0/qo_0.4.0_darwin_amd64.tar.gz"
+      sha256 "3bb2a9cdf32385be096116226965c523de97dcd19113b0f0b62eff7cb2ee729a"
 
-      def install
+      define_method(:install) do
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_darwin_arm64.tar.gz"
-      sha256 "83eb64a521de9f447be3b89b2fdd448192c0e8f2909386e3bde6076d8a7f7d49"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.0/qo_0.4.0_darwin_arm64.tar.gz"
+      sha256 "03827d6a90db78b393dfcdd91cf688784d8d2667c3845f2f1da54ef3b7ab4c32"
 
-      def install
+      define_method(:install) do
         bin.install "qo"
       end
     end
@@ -28,16 +28,16 @@ class Qo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_linux_amd64.tar.gz"
-      sha256 "62a4d415fc15650546f32e68ce94c0ed9471bdc383a848dcc0cb955bf0624a9b"
-      def install
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.0/qo_0.4.0_linux_amd64.tar.gz"
+      sha256 "1292f09bc6656e7e4881effbeec82ae74ce84d89749f62bad8bbd392b665c825"
+      define_method(:install) do
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.3.1/qo_0.3.1_linux_arm64.tar.gz"
-      sha256 "61b7b4bc302a89a5a6fc68167926cb5be5345d5a22ecf55ff22a936e248a5543"
-      def install
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.0/qo_0.4.0_linux_arm64.tar.gz"
+      sha256 "30d3cec4818b7f8c4b46e6970a999533b3841ae5868fe6f8a94c583d9ca68067"
+      define_method(:install) do
         bin.install "qo"
       end
     end
