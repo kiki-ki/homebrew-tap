@@ -5,20 +5,20 @@
 class Qo < Formula
   desc "Query JSON data with SQL"
   homepage "https://github.com/kiki-ki/go-qo"
-  version "0.4.1"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.1/qo_0.4.1_darwin_amd64.tar.gz"
-      sha256 "3b1eb80571b7f5304b82d0d65aed436164fc36ccded303978ec40a659d1e891b"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.5.0/qo_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a96a25d62c34a0476d6077055653e7792788f6d2fb9d923ab851773260ec02ea"
 
       define_method(:install) do
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.1/qo_0.4.1_darwin_arm64.tar.gz"
-      sha256 "a3c693224eaa6c4a3f74ecf9ccc2bf9f636ff8dc8f53814762a921ececa29ff9"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.5.0/qo_0.5.0_darwin_arm64.tar.gz"
+      sha256 "27c8f2538ee40125d99d8e347ad789d5920cc32c493f1b2e1d62c28b946de0b5"
 
       define_method(:install) do
         bin.install "qo"
@@ -28,15 +28,15 @@ class Qo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.1/qo_0.4.1_linux_amd64.tar.gz"
-      sha256 "96c225e26f0c751da8dbf328bb53887fc548c78f10243bd787ca6b9abf0ed933"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.5.0/qo_0.5.0_linux_amd64.tar.gz"
+      sha256 "164cbe6c35c3c7ceae7f51584aafdf9b4b1f886dfa52b853e343f6dac9f872f9"
       define_method(:install) do
         bin.install "qo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kiki-ki/go-qo/releases/download/v0.4.1/qo_0.4.1_linux_arm64.tar.gz"
-      sha256 "ce199b68c350e5bd96f52480f3b039949569ecaf614254ea39f75a47e89f2b34"
+      url "https://github.com/kiki-ki/go-qo/releases/download/v0.5.0/qo_0.5.0_linux_arm64.tar.gz"
+      sha256 "a37acd04290c9bb9836b9bc20af3aee8b41fb17901a8b10a922236ea6e3aa2b0"
       define_method(:install) do
         bin.install "qo"
       end
